@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: unstoppable-proxy
+    env: docker
+    plan: free
+    envVars:
+      - key: PLAYWRIGHT_BROWSERS_PATH
+        value: /ms-playwright
